@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  SQLALCHEMY_DATABASE_URI: bXlzcWwrcHlteXNxbDovL3Jvb3Q6cm9vdEBkYXRhOjMzMDYvbXlkYXRhYmFzZQ==
+kind: Secret
+metadata:
+  creationTimestamp: "2021-04-25T22:44:32Z"
+  name: api
+  namespace: default
+  resourceVersion: "16183"
+  selfLink: /api/v1/namespaces/default/secrets/api
+  uid: 33de8f10-3555-4936-b799-c6cb7cfd8cf8
+type: Opaque
