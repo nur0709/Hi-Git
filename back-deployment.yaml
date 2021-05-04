@@ -25,7 +25,7 @@ spec:
         io.kompose.service: back
     spec:
       containers:
-        - image: nur0709/quotes-back:v2
+        - image: nur0709/quotes-back:v1
           name: api
           env:
           - name: SQLALCHEMY_DATABASE_URI

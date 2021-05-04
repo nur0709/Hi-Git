@@ -45,7 +45,12 @@ spec:
           name: db
           ports:
             - containerPort: 3306
-          resources: {}
-      restartPolicy: Always
-status: {}
+          volumeMounts:
+          - name: db-volume
+            mountPath: /var/lib/mysql
+            subPath: mysql
+      volumes:
+      - name: db-volume
+        persistentVolumeClaim:
+          claimName: db-pvc
  
